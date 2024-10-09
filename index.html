@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Konversi Suhu</title>
-     <!-- Favicon -->
-		<link rel="shortcut icon" href="assets/favicon.ico">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -17,65 +17,78 @@
       <section>
         <!-- Instruksi -->
         <article>
-          <p id="instruksi">
-          </p>
+          <p id="instruksi"></p>
         </article>
         <!-- Inputan suhu -->
-        
-        <form id="formInput" onsubmit="event.preventDefault(); validateForm(); ">
-            <div class="padding-16">
-                <div>
-                    <label for="input-suhu" id="labelInput"></label>
-                  </div>
-                  <textarea name="" id="input-suhu" autofocus></textarea>
-                  <div style="color: red;">
-                    <span id="message"></span>
-                  </div>
-                  
-                  <div style="display: none;">
-                    <label for="jenis-konversi">Pilih Jenis Konversi:</label>
-                    <br>
-                    <select id="jenis-konversi">
-                      <option value="celsius-to-fahrenheit">Celsius ke Fahrenheit</option>
-                      <option value="fahrenheit-to-celsius">Fahrenheit ke Celsius</option>
-                    </select>
-                  </div>
-                  <div style="text-align: right;  width: 65%;">
-                    <button class="form-btn form-btn-submit" onclick="konversi()" >Konversi</button>
-                    <button class="form-btn form-btn-reset" onclick="resetFields()">Reset</button>
-                    <button class="form-btn form-btn-reverse" onclick="reverseKonversi()">Reverse</button>
-                  </div>
+
+        <form
+          id="formInput"
+          onsubmit="event.preventDefault(); validateForm(); "
+        >
+          <div class="padding-16">
+            <div>
+              <label for="input-suhu" id="labelInput"></label>
             </div>
+            <textarea name="" id="input-suhu" autofocus></textarea>
+            <div style="color: red">
+              <span id="message"></span>
+            </div>
+
+            <div style="display: none">
+              <label for="jenis-konversi">Pilih Jenis Konversi:</label>
+              <br />
+              <select id="jenis-konversi">
+                <option value="celsius-to-fahrenheit">
+                  Celsius ke Fahrenheit
+                </option>
+                <option value="fahrenheit-to-celsius">
+                  Fahrenheit ke Celsius
+                </option>
+              </select>
+            </div>
+            <div style="text-align: right; width: 65%">
+              <button class="form-btn form-btn-submit" onclick="konversi()">
+                Konversi
+              </button>
+              <button class="form-btn form-btn-reset" onclick="resetFields()">
+                Reset
+              </button>
+              <button
+                class="form-btn form-btn-reverse"
+                onclick="reverseKonversi()"
+              >
+                Reverse
+              </button>
+            </div>
+          </div>
         </form>
         <!-- Hasil Inputa -->
         <div class="padding-16">
-            <div>
-                <label for="hasil-suhu" id="labelHasil"></label>
-              </div>
-              <textarea name="" id="hasil-suhu" disabled></textarea>
+          <div>
+            <label for="hasil-suhu" id="labelHasil"></label>
+          </div>
+          <textarea name="" id="hasil-suhu" disabled></textarea>
         </div>
         <!-- Cara Kalkulasi -->
-        <div class="padding-16" >
-            <div>
-                <label for="how-to-suhu" id="labelHow">Cara Kalkulasi</label>
-              </div>
-              <textarea name="" id="how-to-suhu" disabled></textarea>
+        <div class="padding-16">
+          <div>
+            <label for="how-to-suhu" id="labelHow">Cara Kalkulasi</label>
+          </div>
+          <textarea name="" id="how-to-suhu" disabled></textarea>
         </div>
       </section>
 
       <!-- Info Content -->
       <section>
-        <header id="keterangan">
-        </header>
+        <header id="keterangan"></header>
         <article>
           <div id="descRumus" class="padding-16"></div>
-        <div id="rumus" class="padding-16"></div>
+          <div id="rumus" class="padding-16"></div>
         </article>
-        
       </section>
     </main>
     <footer>
-      <p>Made with 💗 by Abdul Rokhim @2024</p>
+      <p>Made with 💗 by getbintang @ 2024</p>
     </footer>
     <script src="./js/script.js"></script>
   </body>
